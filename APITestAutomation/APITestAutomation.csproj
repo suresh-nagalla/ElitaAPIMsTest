@@ -36,4 +36,9 @@
     <Folder Include="Tests\" />
   </ItemGroup>
 
+<ItemGroup>
+    <Compile Update="Models/LoginRequest.cs" />
+    <Compile Update="Models/LoginResponse.cs" />
+  </ItemGroup>
+
 </Project>
