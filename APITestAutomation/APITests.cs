@@ -13,7 +13,7 @@ namespace APITestAutomation
         {
             // Arrange
             var client = new RestClient("https://dummyjson.com");
-            var request = new RestRequest("/auth/login", Method.GET);
+            var request = new RestRequest("/auth/login", Method.POST);
             var loginRequest = new LoginRequest
             {
                 Username = "user",
