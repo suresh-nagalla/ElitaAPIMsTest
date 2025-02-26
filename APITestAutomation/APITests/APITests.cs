@@ -28,6 +28,7 @@ namespace APITestAutomation.APITests
             // Assert
             Assert.IsNotNull(response, "Response should not be null");
             Assert.AreEqual("Username and password required", response.Message, "The error message is not as expected.");
+            Assert.AreEqual(HttpStatusCode.BadRequest, response.StatusCode, "The status code is not as expected.");
         }
     }
 }
